@@ -1,0 +1,40 @@
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.title {
+  font-size: 14px;
+  color: var(--muted);
+  flex: 1;
+  margin-right: 10px;
+}
+
+.remove-btn {
+  background: transparent;
+  border: 1px solid var(--danger);
+  color: var(--danger);
+
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: all .2s ease;
+}
+
+.remove-btn:hover {
+  background: var(--danger);
+  color: #fff;
+}
+
+.remove-btn:active {
+  transform: scale(0.9);
+}

@@ -1,0 +1,38 @@
+.header {
+  background: white;
+  padding: 16px 24px;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--muted);
+  padding: 8px 14px;
+  border-radius: 10px;
+  transition: all .2s ease;
+}
+
+nav a:hover {
+  background: var(--bg);
+}
+
+nav a.active {
+  background: var(--primary);
+  color: #fff;
+}
